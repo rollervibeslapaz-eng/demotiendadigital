@@ -96,12 +96,12 @@
 
     <div class="success-message" id="success-message">
         <h2>✅ ¡Pedido Enviado!</h2>
-        <p>Tu pedido ha sido recibido en la cocina.</p>
+        <p>Tu pedido ha sido recibido.</p>
         <button onclick="closeSuccess()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: var(--primary-color); color: white; border: none; border-radius: 20px; cursor: pointer; font-family: 'Poppins', sans-serif; font-weight: 600;">Cerrar</button>
     </div>
 
     <footer class="footer">
-        <p id="footer-address">📍 Dirección del restaurante</p>
+        <p id="footer-address">📍 Dirección</p>
         <p id="footer-hours">🕐 Horario de atención</p>
         <p id="footer-phone">📞 Teléfono de contacto</p>
     </footer>
@@ -123,7 +123,7 @@
         firebase.initializeApp(firebaseConfig);
         const db = firebase.firestore();
 
-        const RESTAURANT_NAME = "Demo Nuevo";
+        const RESTAURANT_NAME = "Demo Emprendedor";
         let menuData = [];
         let cart = {};
         let currentCategory = 'todos';
